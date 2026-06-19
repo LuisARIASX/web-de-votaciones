@@ -1,0 +1,43 @@
+network:
+
+version: 2
+
+ethernets:
+
+ens18:
+
+addresses:
+
+- "192.168.100.222/24"
+
+nameservers:
+
+addresses:
+
+8.8.8.8
+
+search:
+
+routes:
+
+- to: "default"
+
+via: "192.168.100.1"
+
+vlans:
+
+vlan201:
+
+id: 201
+
+link: ens18
+
+addresses:
+
+"192.168.201.5/28"
+
+nameservers:
+
+addresses:
+
+-8.8.8.8
